@@ -51,8 +51,8 @@ h1 {
 
 h2 {
     color: #4f1271;
-    font-size: 2rem;
-    margin-top: 15px;
+    font-size: 1.8rem;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
@@ -80,4 +80,13 @@ figure img {
 figcaption {
     color: #4f1271;
     font-weight: 600;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #4a4063;
+    color: #c8c6d7;
+    font-size: 0.9rem;
+    font-weight: 500;
 }
