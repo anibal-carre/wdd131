@@ -23,16 +23,34 @@ header {
 }
 
 
-/*nav ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    gap: 30px;
-}
-    */
 
 nav ul {
     display: none;
+    flex-direction: column;
+    background: #783f8e;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+    gap: 5px;
+}
+
+nav ul.active {
+    display: flex;
+}
+
+nav ul.active li a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #c8c6d7;
+
+}
+
+.menu-icon {
+    display: block;
+    cursor: pointer;
 }
 
 div img {
