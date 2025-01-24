@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Anibal David Carreño Alvarez" />
+    <meta name="description" content="Place Page WDD 131" />
+    <title>Place Page | WDD 131</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/place.css" />
+    <script src="./scripts/place.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>Barcelona</h1>
+      </header>
+
+      <div class="accent-bar"></div>
+
+      <main class="main">
+        <div class="background">
+          <img
+            src="./images/barcelona-banner.webp"
+            alt="Aerial view of Barcelona with Sagrada Familia"
+            class="background-image"
+          />
+          <div class="gradient-overlay"></div>
+        </div>
+
+        <div class="content">
+          <div class="data-box">
+            <h2>Data</h2>
+            <dl>
+              <div class="row">
+                <dt>Area:</dt>
+                <dd>101.9 sq km</dd>
+              </div>
+              <div class="row">
+                <dt>Population:</dt>
+                <dd>1,620,343</dd>
+              </div>
+              <div class="row">
+                <dt>Region:</dt>
+                <dd>Catalonia</dd>
+              </div>
+              <div class="row">
+                <dt>Languages:</dt>
+                <dd>Catalan, Spanish</dd>
+              </div>
+              <div class="row">
+                <dt>Currency:</dt>
+                <dd>Euro (€)</dd>
+              </div>
+              <div class="row">
+                <dt>Time Zone:</dt>
+                <dd>UTC+1</dd>
+              </div>
+              <div class="row">
+                <dt>Calling Code:</dt>
+                <dd>+34</dd>
+              </div>
+              <div class="row">
+                <dt>Internet TLD:</dt>
+                <dd>.es, .cat</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="weather-box">
+            <h2>Weather ☀️</h2>
+            <dl>
+              <div class="row">
+                <dt>Temperature:</dt>
+                <dd id="temperature">18 °C</dd>
+              </div>
+              <div class="row">
+                <dt>Conditions:</dt>
+                <dd>Sunny</dd>
+              </div>
+              <div class="row">
+                <dt>Wind:</dt>
+                <dd>12 km/h</dd>
+              </div>
+              <div class="row">
+                <dt>Wind Chill:</dt>
+                <dd>17.5 °C</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <p>
+          &copy;<span id="currentyear"></span> 😎 Anibal David Carreño Alvarez
+          😎 Barcelona
+        </p>
+        <p id="lastModified"></p>
+      </footer>
+    </div>
+  </body>
+</html>
