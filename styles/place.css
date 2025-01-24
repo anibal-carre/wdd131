@@ -1,0 +1,107 @@
+:root {
+    --barcelona-red: #8b0000;
+    --barcelona-gold: #fecb00;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: var(--barcelona-red);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.accent-bar {
+    height: 8px;
+    background-color: var(--barcelona-gold);
+    z-index: 10;
+}
+
+.main {
+    flex: 1;
+    position: relative;
+}
+
+.background {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gradient-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.content {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+}
+
+.data-box,
+.weather-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 300px;
+}
+
+.data-box h2,
+.weather-box h2 {
+    background-color: var(--barcelona-red);
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.footer {
+    background-color: var(--barcelona-red);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    z-index: 10;
+    font-weight: 600;
+}
+
+.footer p {
+    margin: 5px 0;
+    opacity: 0.8;
+}
