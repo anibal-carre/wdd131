@@ -67,8 +67,6 @@ body {
     padding: 40px;
 }
 
-
-
 .data-box,
 .weather-box {
     background-color: rgba(255, 255, 255, 0.9);
@@ -96,7 +94,6 @@ body {
 #sun-icon {
     width: 62px;
     height: 62px;
-
 }
 
 .row {
@@ -117,4 +114,47 @@ body {
 .footer p {
     margin: 5px 0;
     opacity: 0.8;
+}
+
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .content {
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .data-box,
+    .weather-box {
+        max-width: 100%;
+    }
+
+    #sun-icon {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .header h1 {
+        font-size: 3rem;
+    }
+
+    .content {
+        padding: 60px;
+        gap: 30px;
+    }
+
+    .data-box,
+    .weather-box {
+        max-width: 350px;
+    }
+
+    #sun-icon {
+        width: 72px;
+        height: 72px;
+    }
 }
