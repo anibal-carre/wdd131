@@ -58,6 +58,66 @@ const temples = [
   // Add more temple objects here...
 ];
 
+function displayTemples(filteredTemples) {
+  const templeContainer = document.getElementById("temple-container");
+  templeContainer.innerHTML = "";
+
+  filteredTemples.forEach((temple) => {
+    const templeCard = document.createElement("figure");
+    templeCard.classList.add("temple-card");
+
+    templeCard.innerHTML = `
+          
+          
+          <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
+          <figcaption>${temple.templeName}</figcaption>
+          <p>Location: ${temple.location}</p>
+          <p>Dedicated: ${temple.dedicated}</p>
+          <p>Size: ${temple.area}</p>
+          
+       
+      `;
+
+    templeContainer.appendChild(templeCard);
+  });
+}
+
+function filterTemples(filter) {
+  let filteredTemples = temples;
+
+  if (filter === "old") {
+    filteredTemples = temples.filter((t) => {
+      const year = parseInt(t.dedicated.split(",")[0]);
+      return year < 1900;
+    });
+  } else if (filter === "new") {
+    filteredTemples = temples.filter((t) => {
+      const year = parseInt(t.dedicated.split(",")[0]);
+      return year >= 2000;
+    });
+  } else if (filter === "large") {
+    filteredTemples = temples.filter((t) => t.area > 50000);
+  } else if (filter === "small") {
+    filteredTemples = temples.filter((t) => t.area < 10000);
+  } else if (filter === "home") {
+    filteredTemples = temples;
+  }
+
+  displayTemples(filteredTemples);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  displayTemples(temples);
+
+  document.querySelectorAll(".menu-option").forEach((link) => {
+    link.addEventListener("click", (event) => {
+      event.preventDefault();
+      const filter = event.target.getAttribute("data-filter");
+      filterTemples(filter);
+    });
+  });
+});
+
 document.getElementById("currentyear").textContent = new Date().getFullYear();
 
 document.getElementById("lastModified").textContent =
