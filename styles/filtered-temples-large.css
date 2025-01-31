@@ -1,0 +1,48 @@
+@media (min-width: 600px) {
+    section {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(300px, 1fr));
+        gap: 1rem;
+        padding: 10px;
+    }
+
+    section img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    nav ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        gap: 30px;
+        display: flex;
+        position: static;
+        flex-direction: row;
+        justify-content: space-around;
+        width: auto;
+        background: none;
+    }
+
+    nav ul li a {
+        font-weight: 600;
+        text-decoration: none;
+        color: #c8c6d7;
+        cursor: pointer;
+    }
+
+    nav ul li a:hover {
+        color: #4f1271;
+        text-decoration: underline;
+        transition: all ease-in-out 0.2s;
+    }
+
+
+
+    div img {
+        display: none;
+
+    }
+}
