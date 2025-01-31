@@ -55,7 +55,22 @@ const temples = [
     imageUrl:
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg",
   },
-  // Add more temple objects here...
+  {
+    templeName: "São Paulo Brazil",
+    location: "São Paulo, Brazil",
+    dedicated: "1978, October, 30",
+    area: 59246,
+    imageUrl:
+      "https://www.churchofjesuschrist.org/imgs/940f3e201364433a3d5d3dc14b0cacee38d41d1d/full/640%2C/0/default",
+  },
+  {
+    templeName: "Rome Italy",
+    location: "Rome, Italy",
+    dedicated: "2019, March, 10",
+    area: 41010,
+    imageUrl:
+      "https://www.churchofjesuschrist.org/imgs/17e2c70d687fffedfe115197e57fa8f5d1d369bb/full/640%2C/0/default",
+  },
 ];
 
 function displayTemples(filteredTemples) {
