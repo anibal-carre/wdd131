@@ -3,7 +3,110 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="author" content="Anibal David Carreño Alvarez" />
+    <meta name="description" content="Product Review Form | WDD 131" />
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="./styles/form.css" />
+    <script defer src="./scripts/form.js"></script>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>Product Review Form</h1>
+    </header>
+    <main>
+      <form id="reviewForm" method="get" action="review.html">
+        <label for="productName">Product Name:</label>
+        <select id="productName" name="productName" required>
+          <option value="" disabled selected>Select a Product ...</option>
+        </select>
+
+        <label>Overall Rating:</label>
+        <div class="rating">
+          <div>
+            <label for="star1">☆</label>
+            <input type="radio" id="star1" name="rating" value="1" required />
+          </div>
+          <div>
+            <label for="star2">☆☆</label>
+            <input type="radio" id="star5" name="rating" value="2" />
+          </div>
+
+          <div>
+            <label for="star3">☆☆☆</label>
+            <input type="radio" id="star3" name="rating" value="3" />
+          </div>
+
+          <div>
+            <label for="star4">☆☆☆☆</label>
+            <input type="radio" id="star4" name="rating" value="4" />
+          </div>
+
+          <div>
+            <label for="star5">☆☆☆☆☆</label>
+            <input type="radio" id="star5" name="rating" value="5" />
+          </div>
+        </div>
+
+        <div class="date">
+          <label for="installationDate">Date of Installation:</label>
+          <input
+            type="date"
+            id="installationDate"
+            name="installationDate"
+            required
+          />
+        </div>
+
+        <label>Which features did you find useful in the product?</label>
+        <div class="features">
+          <div>
+            <input
+              type="checkbox"
+              id="durability"
+              name="features"
+              value="Durability"
+            /><label for="durability">Durability</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="easeOfUse"
+              name="features"
+              value="Ease of Use"
+            /><label for="easeOfUse">Ease of Use</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="performance"
+              name="features"
+              value="Performance"
+            /><label for="performance">Performance</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="design"
+              name="features"
+              value="Design"
+            /><label for="design">Design</label>
+          </div>
+        </div>
+
+        <div class="user-info">
+          <label for="writtenReview">Written Review (Optional):</label>
+          <textarea id="writtenReview" name="writtenReview"></textarea>
+
+          <label for="userName">Your Name (Optional):</label>
+          <input type="text" id="userName" name="userName" />
+        </div>
+
+        <input type="submit" value="Post Review" />
+      </form>
+    </main>
+    <footer>
+      <p>&copy; <span id="currentyear"></span> Anibal David, Venezuela.</p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
 </html>

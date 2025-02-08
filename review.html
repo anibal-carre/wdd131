@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Review Confirmation</title>
+    <link rel="stylesheet" href="./styles/form.css" />
+    <script defer src="./scripts/form.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Review Submitted</h1>
+    </header>
+    <main>
+      <p>Thank you for your review!</p>
+      <p>Total reviews submitted: <span id="reviewCount"></span></p>
+    </main>
+    <footer>
+      <p>&copy; <span id="currentyear"></span> Anibal David, Venezuela.</p>
+      <p id="lastModified"></p>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const reviewCount = localStorage.getItem("reviewCount") || 0;
+        document.getElementById("reviewCount").textContent = reviewCount;
+      });
+    </script>
+  </body>
+</html>
