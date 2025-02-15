@@ -6,9 +6,168 @@
     <meta name="author" content="Anibal David Carreño Alvarez" />
     <meta
       name="description"
-      content="The site provides a platform for eco-conscious travelers to learn about sustainable travel practices, discover green destinations, and access resources to reduce their environmental footprint. It will feature blog posts, travel guides, expert interviews, and personal travel stories."
+      content="Learn about EcoWanderer's mission to promote sustainable travel and eco-friendly tourism practices."
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/about.css" />
     <title>EcoWanderer | About Us</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <img class="logo" src="./images/logo.webp" alt="EcoWanderer Logo" />
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./destinations.html">Destinations</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="div-menu-icon">
+        <span class="material-symbols-outlined">menu</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="about-hero">
+        <h1>About EcoWanderer</h1>
+        <p>Promoting sustainable travel for a better world</p>
+      </section>
+
+      <section class="about-mission">
+        <div class="container">
+          <h2>Our Mission</h2>
+          <p>
+            At EcoWanderer, we believe that travel has the power to transform
+            lives, connect cultures, and preserve our planet's precious
+            resources. Our mission is to inspire and empower travelers to
+            explore the world responsibly, leaving a positive impact on the
+            places they visit.
+          </p>
+        </div>
+      </section>
+
+      <section class="about-values">
+        <div class="container">
+          <h2>Our Values</h2>
+          <div class="values-grid">
+            <div class="value-card">
+              <span class="material-symbols-outlined">eco</span>
+              <h3>Sustainability</h3>
+              <p>
+                We promote eco-friendly practices and support businesses that
+                prioritize environmental conservation.
+              </p>
+            </div>
+            <div class="value-card">
+              <span class="material-symbols-outlined">diversity_3</span>
+              <h3>Cultural Respect</h3>
+              <p>
+                We encourage travelers to embrace and respect local cultures,
+                traditions, and communities.
+              </p>
+            </div>
+            <div class="value-card">
+              <span class="material-symbols-outlined">volunteer_activism</span>
+              <h3>Positive Impact</h3>
+              <p>
+                We strive to create positive change through responsible tourism
+                and community engagement.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-team">
+        <div class="container">
+          <h2>Our Team</h2>
+          <div class="team-grid">
+            <div class="team-member">
+              <img
+                src="./images/user1.jpeg"
+                alt="Team Member 1"
+                class="team-photo"
+              />
+              <h3>Jane Doe</h3>
+              <p>Founder & CEO</p>
+            </div>
+            <div class="team-member">
+              <img
+                src="./images/user2.jpg"
+                alt="Team Member 2"
+                class="team-photo"
+              />
+              <h3>John Smith</h3>
+              <p>Head of Sustainability</p>
+            </div>
+            <div class="team-member">
+              <img
+                src="./images/user3.jpg"
+                alt="Team Member 3"
+                class="team-photo"
+              />
+              <h3>Emily Brown</h3>
+              <p>Travel Expert</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-join">
+        <div class="container">
+          <h2>Join Our Mission</h2>
+          <p>
+            Together, we can make a difference in how we explore and preserve
+            our beautiful planet. Join our community of eco-conscious travelers
+            and start your sustainable travel journey today!
+          </p>
+          <button class="cta-button" id="joinMissionBtn">Get Involved</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>About EcoWanderer</h3>
+          <p>
+            Your guide to sustainable and responsible travel around the world.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./destinations.html">Destinations</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Stay Connected</h3>
+          <p>Join our newsletter for sustainable travel tips and updates!</p>
+          <form class="subscribe-form" id="subscribe-form">
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              required
+            />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 EcoWanderer. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
 </html>
