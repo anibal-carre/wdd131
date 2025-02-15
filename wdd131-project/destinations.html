@@ -6,9 +6,143 @@
     <meta name="author" content="Anibal David Carreño Alvarez" />
     <meta
       name="description"
-      content="The site provides a platform for eco-conscious travelers to learn about sustainable travel practices, discover green destinations, and access resources to reduce their environmental footprint. It will feature blog posts, travel guides, expert interviews, and personal travel stories."
+      content="Discover eco-friendly and sustainable travel destinations around the world with EcoWanderer."
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/destinations.css" />
+    <script defer src="./scripts/destinations.js"></script>
     <title>EcoWanderer | Destinations</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <img class="logo" src="./images/logo.webp" alt="EcoWanderer Logo" />
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./destinations.html">Destinations</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="div-menu-icon">
+        <span class="material-symbols-outlined">menu</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="destinations-hero">
+        <h1>Eco-Friendly Destinations</h1>
+        <p>Discover sustainable travel experiences around the world</p>
+      </section>
+
+      <section class="destinations-filter">
+        <div class="container">
+          <h2>Find Your Perfect Eco-Destination</h2>
+          <div class="filter-options">
+            <select id="region-filter">
+              <option value="">All Regions</option>
+              <option value="europe">Europe</option>
+              <option value="asia">Asia</option>
+              <option value="americas">Americas</option>
+              <option value="africa">Africa</option>
+              <option value="oceania">Oceania</option>
+            </select>
+            <select id="activity-filter">
+              <option value="">All Activities</option>
+              <option value="nature">Nature & Wildlife</option>
+              <option value="culture">Cultural Experiences</option>
+              <option value="adventure">Adventure</option>
+              <option value="relaxation">Relaxation</option>
+            </select>
+          </div>
+        </div>
+      </section>
+
+      <section class="destinations-grid">
+        <div class="container" id="destinations-container">
+          <!-- Destinations will be dynamically added here -->
+        </div>
+      </section>
+
+      <section class="eco-tips">
+        <div class="container">
+          <h2>Eco-Travel Tips</h2>
+          <div class="tips-carousel" id="tips-carousel">
+            <div class="tip">
+              <h3>Use Reusable Water Bottles</h3>
+              <p>
+                Reduce plastic waste by bringing your own reusable water bottle
+                on your travels.
+              </p>
+            </div>
+            <div class="tip">
+              <h3>Support Local Businesses</h3>
+              <p>
+                Choose locally-owned accommodations and restaurants to support
+                the local economy.
+              </p>
+            </div>
+            <div class="tip">
+              <h3>Offset Your Carbon Footprint</h3>
+              <p>
+                Consider carbon offsetting programs to minimize the
+                environmental impact of your travels.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-controls">
+            <button id="prevTip" aria-label="Previous tip">
+              <span class="material-symbols-outlined">arrow_back</span>
+            </button>
+            <button id="nextTip" aria-label="Next tip">
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>About EcoWanderer</h3>
+          <p>
+            Your guide to sustainable and responsible travel around the world.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./destinations.html">Destinations</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Stay Connected</h3>
+          <p>Join our newsletter for sustainable travel tips and updates!</p>
+          <form class="subscribe-form" id="subscribe-form">
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              required
+            />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 EcoWanderer. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
 </html>
